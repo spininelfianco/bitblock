@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home a Tutto Schermo</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bg {
+    /* L'immagine di sfondo */
+    background-image: url("il_tuo_percorso_immagine.jpg");
+
+    /* Imposta l'immagine di sfondo a coprire l'intera pagina */
+    height: 100%; 
+
+    /* Centra e scala l'immagine perfettamente */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Aggiungi sfocatura se lo desideri */
+    /*filter: blur(8px);*/
+    /*-webkit-filter: blur(8px);*/
+  }
+</style>
+</head>
+<body>
+
+<!-- La div per l'immagine di sfondo -->
+<div class="bg"></div>
+
+</body>
+</html>

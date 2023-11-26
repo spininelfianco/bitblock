@@ -1,0 +1,21 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* L'immagine di sfondo */
+  background-image: url("coming.png");
+
+  /* Imposta l'immagine di sfondo a coprire l'intera pagina */
+  height: 100%; 
+
+  /* Centra e scala l'immagine perfettamente */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Aggiungi sfocatura se lo desideri */
+  /*filter: blur(8px);*/
+  /*-webkit-filter: blur(8px);*/
+}
