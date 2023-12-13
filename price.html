@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NODE PRICE API biteblock</title>
+    <!-- Aggiungi collegamenti a fogli di stile esterni o CSS interno qui -->
+</head>
+<body>
+    <header>
+        <h1>biteblock contract price</h1>
+    </header>
+
+    <main>
+        <button id="getPoolReservesButton">Ottieni Pool Reserves</button>
+        <p id="poolReservesData">Risultati delle Pool Reserves:</p>
+    </main>
+
+    <!-- Includi script JavaScript alla fine della pagina -->
+    <script>
+        // Funzione per eseguire la chiamata API per ottenere le Pool Reserves
+            // Funzione per eseguire la chiamata API per ottenere le Pool Reserves
+            async function getPoolReserves() {
+                try {
+                    // URL dell'API del tuo nodo Reth
+                    const apiUrl = "http://162.254.36.60:8545/pair/0x8FBD26A7Cb1AB65834c5Ea245aa1F1e78D03ED30/reserves";
+
+                    // Configura le opzioni per la richiesta HTTP POST
+                    const requestOptions = {
+                        method: "POST", // Usa il metodo POST
+                        headers: {
+                            "Content-Type": "application/json", // Imposta l'header Content-Type
+                        },
+                        body: JSON.stringify({}), // Includi un corpo vuoto se necessario
+                    };
+
+                    // Esegui la chiamata API utilizzando fetch con le opzioni personalizzate
+                    const response = await fetch(apiUrl, requestOptions);
+
+                    // Resto del codice rimane invariato...
+                } catch (error) {
+                    console.error("Errore durante la richiesta API:", error);
+                }
+            }
+
+
+        // Ottieni il pulsante e aggiungi un gestore di eventi al clic
+        const getPoolReservesButton = document.getElementById("getPoolReservesButton");
+        getPoolReservesButton.addEventListener("click", getPoolReserves);
+    </script>
+</body>
+</html>
