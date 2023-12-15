@@ -1,0 +1,24 @@
+{
+  "name": "tradex-chart-live-price",
+  "version": "1.0.0",
+  "description": "TradeX-chart is a highly customizable stock trade chart with one dependency written in plain JavaScript; use it with any framework or backend.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "fflate": "0.7.4",
+    "parcel-bundler": "^1.6.1",
+    "talib-web": "0.1.3",
+    "tradex-chart": "0.139.19"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
